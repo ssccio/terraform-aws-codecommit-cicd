@@ -11,7 +11,7 @@ provider "aws" {
 
 # Generate a unique label for naming resources
 module "unique_label" {
-  source     = "git::https://github.com/cloudposse/terraform-null-label.git
+  source     = "git::https://github.com/cloudposse/terraform-null-label.git"
   namespace  = var.organization_name
   name       = var.repo_name
   stage      = var.environment
